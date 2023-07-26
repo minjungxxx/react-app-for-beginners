@@ -12,7 +12,6 @@ function Todo() {
     setToDos((currentArr) => [toDo, ...currentArr])
     setToDo('')
   }
-  console.log(toDos)
   
   return (
     <div>
@@ -21,6 +20,10 @@ function Todo() {
         <input onChange={onChange} value={toDo} type="text" placeholder="Write your to do..."/>
         <button>Add To Do</button>
       </form>
+      <hr/>
+      <ul>
+        {toDos.map((item, index) => (<li key={index}>{item}</li>))}
+      </ul>
     </div>
   )
 }
