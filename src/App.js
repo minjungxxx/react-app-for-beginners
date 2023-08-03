@@ -1,7 +1,8 @@
 
 // import UseEffectEx from "./UseEffectEx";
 // import CleanupEx from "./CleanupEx";
-import Todo from "./Todo";
+// import Todo from "./Todo";
+import CoinTracker from "./CoinTracker";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
     //   <hr></hr>
     //   <CleanupEx/>
     // </div>
-    <Todo></Todo>
+    // <Todo></Todo>
+    <CoinTracker></CoinTracker>
   );
 }
 
