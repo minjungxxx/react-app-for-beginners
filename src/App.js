@@ -2,7 +2,8 @@
 // import UseEffectEx from "./UseEffectEx";
 // import CleanupEx from "./CleanupEx";
 // import Todo from "./Todo";
-import CoinTracker from "./CoinTracker";
+// import CoinTracker from "./CoinTracker";
+import Movie from "./Movie";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
     //   <CleanupEx/>
     // </div>
     // <Todo></Todo>
-    <CoinTracker></CoinTracker>
+    // <CoinTracker></CoinTracker>
+    <Movie></Movie>
   );
 }
 
