@@ -1,21 +1,18 @@
-
-// import UseEffectEx from "./UseEffectEx";
-// import CleanupEx from "./CleanupEx";
-// import Todo from "./Todo";
-// import CoinTracker from "./CoinTracker";
-import Movie from "./Movie";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route 
+} from 'react-router-dom'
+import Home from './routes/Home';
+import Detail from './routes/Detail';
 
 function App() {
-  return (
-    // <div>
-    //   <UseEffectEx/>
-    //   <hr></hr>
-    //   <CleanupEx/>
-    // </div>
-    // <Todo></Todo>
-    // <CoinTracker></CoinTracker>
-    <Movie></Movie>
-  );
+  return <Router>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/movie" element={<Detail/>}/>
+    </Routes>
+  </Router>
 }
 
 export default App;
